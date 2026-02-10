@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Meu Amor ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container" id="main-card">
+        <h1>Oláaa meu amor! ❤️</h1>
+        <p>Eu preparei algo especial para você. Mas antes, me diga: o que você mais gosta na nossa relação?</p>
+        <input type="text" id="userInput" placeholder="Ex: Seu carinho, nossas conversas...">
+        <button onclick="proximaPagina()">Revelar Surpresa</button>
+    </div>
+
+    <div class="container hidden" id="secret-page">
+
+        <section class="fade-in">
+            <h2>Meu Poema para Você</h2>
+            <div class="poema">
+                <p>
+                    "Quero viver junto a este campo florido,
+                    Onde meu coração em teu nome é rendido.
+                    Sob chuva, sol ou tempestade sem fim,
+                    Meu lugar é teu, e o teu é em mim."
+                </p>
+                <div class="feedback-dela">
+                    <p>Oww, que fofa! 🫶</p>
+                    <p>Saber que você gosta de <strong><span id="resposta-dela"></span></strong> faz tudo ser muito
+                        especial para mim!</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="fade-in">
+
+        <section class="fade-in">
+            <h2>Nossa História 📖</h2>
+
+            <div id="contador">
+                Pulsando juntos há: <br>
+                <span id="dias-contagem">0</span> dias
+            </div>
+
+            <audio id="meuAudio" loop>
+                <source src="musica.mp3" type="audio/mpeg">
+            </audio>
+            <div class="timeline">
+                <div class="momento">
+                    <p><strong>Outubro:</strong> Onde tudo começou... ✨</p>
+                    <img src="https://i.imgur.com/y5N7inW.jpeg" class="foto-casal" alt="Foto de Outubro">
+                </div>
+                <div class="momento">
+                    <p><strong>Novembro:</strong> Momentos que ficaram guardados.</p>
+                    <img src="https://i.imgur.com/bSjUW07.jpeg" class="foto-casal" alt="Foto de Novembro">
+                </div>
+                <div class="momento">
+                    <p><strong>Dezembro:</strong> O melhor final de ano.</p>
+                    <img src="https://i.imgur.com/0bVqQMQ.jpeg" class="foto-casal" alt="Foto de Dezembro">
+                </div>
+                <div class="momento">
+                    <p><strong>Janeiro:</strong> Novos planos e muito amor.</p>
+                    <img src="https://i.imgur.com/jFBH3KG.jpeg" class="foto-casal" alt="Foto de Janeiro">
+                </div>
+                <div class="momento">
+                    <p><strong>Fevereiro:</strong> Nosso primeiro Dia dos Namorados! ❤️</p>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn-voltar fade-in" onclick="voltar()">Voltar ao Início</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
